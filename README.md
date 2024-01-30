@@ -1,0 +1,11 @@
+## Kumpulan Assignment Kelas Bootcamp Golang + Javascript Hacktiv8
+- Day 1: Assignment 1
+- Day 2: Assignment 2
+- Day 3: Assignment 3
+- Day 4: Assignment 4
+- Day 5: Assignment 5
+- Day 6: Assignment 6
+- Day 7: Assignment 7
+- Day 8: Assignment 8
+- Day 9: Assignment 9
+- Day 10: Assignment 10
