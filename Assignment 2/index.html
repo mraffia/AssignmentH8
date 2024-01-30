@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Latihan Kelas</title>
+
+  <script>
+    function add() {
+      let numOne, numTwo, sum;
+      numOne = parseInt(document.getElementById("first").value);
+      numTwo = parseInt(document.getElementById("second").value);
+
+      sum = numOne + numTwo;
+      document.getElementById("answer").value = sum;
+    }
+
+    function div() {
+      let numOne, numTwo, output;
+      numOne = parseInt(document.getElementById("first").value);
+      numTwo = parseInt(document.getElementById("second").value);
+
+      if (numTwo !== 0) {
+        output = numOne / numTwo;
+      } else {
+        output = 0;
+      }
+      document.getElementById("answer").value = output;
+    }
+
+    function check() {
+      let email, password, output;
+      email = document.getElementById("email").value;
+      password = document.getElementById("password").value;
+
+      if (email === "admin@co" && password === "password") {
+        alert("Sukses Login");
+        window.location.replace("https://github.com/mraffia/AssignmentH8");
+      } else {
+        alert("Gagal Login");
+        window.location.replace("https://www.google.com/");
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <section id="profile-sec">
+      <div class="form">
+        <form>
+          <label for="answer">Answer</label><br>
+          <input type="text" id="answer" name="answer"><br>
+        </form>
+      </div>
+    </section>
+    <section id="form-sec">
+      <div class="form">
+        <form onsubmit="return false">
+          <label for="first">Nilai 1</label><br>
+          <input type="text" id="first" name="first"><br>
+          <label for="second">Nilai 2</label><br>
+          <input type="text" id="second" name="second"><br>
+          <button class="add" onclick="add()">Sum</button>
+          <button class="div" onclick="div()">Div</button>
+        </form>
+      </div>
+    </section>
+    <section id="form-sec-2">
+      <div class="form">
+        <form onsubmit="return false">
+          <label for="email">Email</label><br>
+          <input type="text" id="email" name="email"><br>
+          <label for="password">Password</label><br>
+          <input type="password" id="password" name="password"><br>
+          <button class="submit" onclick="check()">Submit</button>
+        </form>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
