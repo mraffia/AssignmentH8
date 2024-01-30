@@ -54,9 +54,9 @@ function segitigaSamaSisi(num) {
   }
 }
 
-segitiga(10);
-segitigaPagar(10);
-segitigaSamaSisi(10);
+// segitiga(10);
+// segitigaPagar(10);
+// segitigaSamaSisi(10);
 
 let umur = [30, 32, 24, 26, 19, 17, 81];
 
@@ -87,4 +87,53 @@ function printSortedArray(sorted) {
   }
 }
 
-printSortedArray(sortArray(umur));
+// printSortedArray(sortArray(umur));
+
+let str = "cihuy";
+
+function reverseString(str) {
+  let reversed = "";
+  for (let i = str.length; i >= 0; i--) {
+    reversed += str.charAt(i);
+  }
+
+  if (str.toLowerCase() === reversed.toLowerCase()) {
+    return reversed + " = Palindrome";
+  }
+  return reversed;
+}
+
+// console.log(reverseString(str));
+
+function biggestThree(arr) {
+  if (arr.length < 3) {
+    return "Array has less than 3 numbers in it"
+  }
+
+  let bigThree = [];
+  while (bigThree.length < 3) {
+    let max = 0;
+
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] > max && !bigThree.includes(arr[i])) {
+        max = arr[i];
+      }
+    }
+
+    if (max === 0) {
+      break;
+    }
+
+    bigThree.push(max);
+  }
+
+  let total = 1;
+  for (let i = 0; i < bigThree.length; i++) {
+    total *= bigThree[i];
+  }
+
+  return total;
+}
+
+console.log(biggestThree([2, 2, 3, 3, 3]));
+console.log(biggestThree([2, 20, 10, 6, 3, 4, 20]));
