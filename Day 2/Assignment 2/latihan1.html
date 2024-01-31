@@ -4,28 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <title>Latihan 1 - Day 2</title>
-
-  <script>
-    function tampilkanData() {
-      let nama, role, availability, usia, lokasi, pengalaman, email;
-      nama = document.getElementById("nama").value || "null";
-      role = document.getElementById("role").value || "null";
-      availability = document.getElementById("availability").value || "null";
-      usia = document.getElementById("usia").value || "null";
-      lokasi = document.getElementById("lokasi").value || "null";
-      pengalaman = document.getElementById("pengalaman").value || "null";
-      email = document.getElementById("email").value || "null";
-      
-      document.getElementById("info-nama").innerHTML = nama;
-      document.getElementById("info-role").innerHTML = role;
-      document.getElementById("info-availability").innerHTML = availability;
-      document.getElementById("info-usia").innerHTML = usia;
-      document.getElementById("info-lokasi").innerHTML = lokasi;
-      document.getElementById("info-pengalaman").innerHTML = pengalaman;
-      document.getElementById("info-email").innerHTML = email;
-    }
-  </script>
+  <title>Latihan 1 - Day 1</title>
 </head>
 <body>
   <div class="container">
@@ -94,7 +73,7 @@
           <input type="text" id="pengalaman" name="pengalaman"><br>
           <label for="email">Email</label><br>
           <input type="text" id="email" name="email"><br>
-          <button class="submit" onclick="tampilkanData()">Submit</button>
+          <button class="submit">Submit</button>
         </form>
       </div>
     </section>
