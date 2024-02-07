@@ -90,7 +90,7 @@ func GetCar(ctx *gin.Context) {
 	})
 }
 
-func GetAllCar(ctx *gin.Context) {
+func GetAllCars(ctx *gin.Context) {
 	condition := false
 
 	if len(CarDatas) == 0 {

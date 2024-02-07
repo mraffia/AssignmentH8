@@ -1,7 +1,7 @@
 package database
 
 import (
-	"belajar-gin/models"
+	"belajar-gorm/models"
 	"fmt"
 	"log"
 
