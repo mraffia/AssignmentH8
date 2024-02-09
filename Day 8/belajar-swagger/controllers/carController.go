@@ -73,7 +73,7 @@ func CreateCars(c *gin.Context) {
 	}
 
 	// Create car
-	carInput := models.Car{Merk: input.Merk, Harga: input.Harga, Typecars: input.Typecars}
+	carInput := models.Car{Merk: input.Merk, Pemilik: input.Pemilik, Harga: input.Harga, Typecars: input.Typecars}
 	db.Create(&carInput)
 
 	c.JSON(http.StatusOK, gin.H{"data": carInput})

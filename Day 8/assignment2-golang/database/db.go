@@ -1,7 +1,7 @@
 package database
 
 import (
-	"belajar-swagger/models"
+	"assignment2-golang/models"
 	"fmt"
 	"log"
 
@@ -14,7 +14,7 @@ var (
 	user     = "postgres"
 	password = "boolrisa51"
 	dbPort   = "5432"
-	dbname   = "learn-swagger"
+	dbname   = "assignment2-golang"
 	db       *gorm.DB
 	err      error
 )
@@ -27,7 +27,7 @@ func StartDB() {
 		log.Fatal("error connecting to database:", err)
 	}
 
-	db.Debug().AutoMigrate(models.Car{})
+	db.Debug().AutoMigrate(models.Order{}, models.Item{})
 }
 
 func GetDB() *gorm.DB {
